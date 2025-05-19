@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aishwarya Swaminathan - Staff Software Engineer Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome for general icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Devicon for tech logos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #fff;
+            color: #1a1a1a;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 36px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 18px rgba(0, 0, 0, 0.08);
+            padding: 40px 32px 32px 32px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #0b234a;
+            margin-top: 0;
+        }
+
+        h1 {
+            font-size: 2.3em;
+            margin-bottom: 0.1em;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #e3e8f0;
+            padding-bottom: 4px;
+            margin-bottom: 0.7em;
+        }
+
+        h3 {
+            color: #0b234a;
+            margin-bottom: 0.3em;
+        }
+
+        .contact {
+            font-size: 1.13em;
+            margin-bottom: 1.2em;
+        }
+
+        .contact a {
+            color: #0b234a;
+            text-decoration: none;
+            margin-right: 16px;
+        }
+
+        .section {
+            margin-bottom: 2.2em;
+        }
+
+        ul {
+            margin: 0.3em 0 0.8em 1.5em;
+        }
+
+        .skills-list,
+        .certs-list,
+        .lang-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li,
+        .certs-list li,
+        .lang-list li {
+            background: #e3e8f0;
+            color: #0b234a;
+            padding: 7px 15px;
+            border-radius: 16px;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .exp-role {
+            font-weight: bold;
+            color: #0b234a;
+            font-size: 1.1em;
+        }
+
+        .exp-org {
+            color: #1a1a1a;
+            font-weight: bold;
+        }
+
+        .exp-dates {
+            color: #2261a9;
+            font-size: 0.98em;
+        }
+
+        .project-title {
+            color: #2261a9;
+            font-weight: bold;
+            font-size: 1.08em;
+            margin-bottom: 0.1em;
+        }
+
+        .highlight {
+            background: #f4f8fd;
+            border-left: 5px solid #2261a9;
+            padding: 10px 18px;
+            margin-bottom: 1.2em;
+            border-radius: 5px;
+        }
+
+        .award {
+            background: #2261a9;
+            color: #fff;
+            padding: 5px 14px;
+            border-radius: 16px;
+            font-size: 0.97em;
+            display: inline-block;
+        }
+
+        .project-list {
+            margin: 0;
+            padding: 0;
+        }
+
+        .project-list li {
+            margin-bottom: 0.6em;
+        }
+
+        .tech-stack-title {
+            font-weight: bold;
+            margin: 10px 0 5px 0;
+            color: #0b234a;
+            font-size: 1em;
+            letter-spacing: 0.5px;
+        }
+
+        .tech-stack-title::before {
+            font-family: "Font Awesome 6 Free";
+            /* or "Font Awesome 6 Pro" if you use Pro */
+            font-weight: 900;
+            /* solid style */
+            content: "\f1b3";
+            /* Unicode for fa-cubes-project */
+            color: blue;
+            margin-right: 7px;
+            font-size: 1.1em;
+            display: inline-block;
+        }
+
+        .tech-icons {
+            padding-left: 1.5em;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 6px 0 0 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .tech-icons li {
+            background: #e3e8f0;
+            color: #0b234a;
+            border-radius: 14px;
+            padding: 5px 12px;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            font-size: 0.98em;
+        }
+
+        .tech-icons i,
+        .tech-icons span.devicon {
+            font-size: 1.1em;
+        }
+
+        .tech-icons img.grafana-icon {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            border-radius: 3px;
+        }
+
+        .tech-icons img.splunk-icon {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            border-radius: 3px;
+        }
+
+        .edu {
+            font-size: 1.08em;
+        }
+
+        .page-break {
+            page-break-before: always;
+            margin-top: 40px;
+        }
+
+        a {
+            color: #2261a9;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.3em;
+            }
+
+            h2 {
+                font-size: 1.1em;
+            }
+        }
+
+        .exp-block {
+            margin-bottom: 36px;
+            padding-left: 0;
+        }
+
+        /* .exp-block.highlight {
+            border-left: 5px solid #2261a9;
+            background: linear-gradient(90deg, #f4f8fd 80%, transparent 100%);
+            padding-left: 18px;
+        } */
+        .exp-block.highlight {
+            border-left: none;
+            background: none;
+            padding-left: 0;
+        }
+
+
+        .exp-role-line {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 1.22em;
+            font-weight: 700;
+            color: #2d3a5a;
+            /* Deep blue for roles */
+            margin-bottom: 0;
+            margin-top: 28px;
+            display: block;
+            letter-spacing: 0.5px;
+        }
+
+        /* .exp-role-line::before {
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            content: "\f508";
+            margin-right: 9px;
+            font-size: 1.08em;
+            vertical-align: middle;
+            display: inline-block;
+        } */
+
+
+        .exp-role-line.star::before {
+            content: "★ ";
+            color: #e2b007;
+            font-size: 1.15em;
+            margin-right: 2px;
+        }
+
+        .exp-project-name {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            font-size: 1em;
+            color: #2d3a5a;
+            margin-bottom: 8px;
+            margin-top: 2px;
+            margin-left: 9px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.1px;
+        }
+
+        .exp-project-name::before {
+            font-family: "Font Awesome 6 Free";
+            /* or "Font Awesome 6 Pro" if you use Pro */
+            font-weight: 900;
+            /* solid style */
+            content: "\f07c";
+            /* Unicode for fa-folder-project */
+            color: #e67e22;
+            margin-right: 7px;
+            font-size: 1.1em;
+            display: inline-block;
+        }
+
+        .exp-dates {
+            font-size: 0.98em;
+            color: #2261a9;
+            font-weight: normal;
+            margin-left: 8px;
+        }
+
+        .exp-separator {
+            height: 10px;
+        }
+
+        body,
+        .container,
+        .exp-org,
+        .exp-role,
+        .exp-block,
+        .tech-icons li,
+        .tech-stack-title,
+        ul,
+        li,
+        p {
+            color: #0b234a !important;
+        }
+
+        .contact a[href*="github"] i {
+            color: #181717 !important;
+        }
+
+        .contact a[href*="linkedin"] i {
+            color: #0077b5 !important;
+        }
+
+        .contact a[href*="github"] {
+            color: #181717 !important;
+        }
+
+        .contact a[href*="linkedin"] {
+            color: #0077b5 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Aishwarya Swaminathan</h1>
+        <div class="contact">
+            Staff Software Engineer<br>
+            Bangalore | +91-9789069342 | <a href="mailto:aishwarya.s1910@gmail.com">aishwarya.s1910@gmail.com</a><br>
+            <a href="https://github.com/aishwarya-swaminathan" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/aishwarya-swaminathan/" target="_blank"><i class="fab fa-linkedin"></i>
+                LinkedIn</a>
+        </div>
+
+        <div class="section">
+            <h2>Professional Summary</h2>
+            <p>
+                Staff Software Engineer with 10+ years of experience building scalable, resilient microservices and
+                distributed systems for global enterprises. Skilled in Java, Spring, cloud-native development, and
+                high-throughput backend architectures. Recognized for technical leadership, code quality, and mentoring.
+                Passionate about leveraging modern tech to solve complex business challenges and drive continuous
+                improvement.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Why Hire Me?</h2>
+            <ul>
+                <li><strong>Proven Impact:</strong> Delivered and scaled mission-critical microservices for Fortune 500
+                    companies (Visa, Lowe’s, Apple, NAGRA), handling millions to billions of transactions with zero
+                    downtime.</li>
+                <li><strong>Tech Leadership:</strong> Trusted mentor and code quality champion, driving best practices
+                    (SOLID, DDD, automated testing) and upskilling teams across organizations.</li>
+                <li><strong>Full-Stack Problem Solver:</strong> Deep expertise from backend (Java, Spring, Kafka,
+                    Cassandra, Neo4j) to CI/CD, cloud, and performance engineering.</li>
+                <li><strong>Award-Winning Contributor:</strong> Recognized with the “BRAVO Award” for independently
+                    leading high-stakes upgrades and solving complex technical challenges.</li>
+                <li><strong>Business-Driven Mindset:</strong> I bridge business needs and technology, ensuring every
+                    solution is robust, scalable, and aligned with customer success.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Core Skills</h2>
+            <ul class="skills-list">
+                <li><span class="devicon-java-plain colored"></span> Java 11/17</li>
+                <li><span class="devicon-spring-plain colored"></span> Spring Boot/WebFlux</li>
+                <li><span class="devicon-postgresql-plain colored"></span> PostgreSQL</li>
+                <li><span class="devicon-cassandra-plain colored"></span> Cassandra</li>
+                <li><span class="devicon-neo4j-plain colored"></span> Neo4j</li>
+                <li><span class="devicon-apachekafka-original colored"></span> Kafka</li>
+                <li><span class="devicon-rabbitmq-original colored"></span> RabbitMQ</li>
+                <li><span class="devicon-docker-plain colored"></span> Docker</li>
+                <li><span class="devicon-googlecloud-plain colored"></span> GCP</li>
+                <li><span class="devicon-gradle-plain colored"></span> Gradle</li>
+                <li><span class="devicon-maven-plain colored"></span> Maven</li>
+                <li><span class="devicon-python-plain colored"></span> Python (Regression Testing)</li>
+                <li><span class="devicon-mockito-plain colored"></span> Mockito</li>
+                <li><span class="devicon-apachespark-plain colored"></span> Spark</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Certifications</h2>
+            <ul class="certs-list">
+                <li><i class="fas fa-award" style="color:#e2b007"></i> Neo4j Certified Professional</li>
+                <li><i class="fas fa-award" style="color:#e2b007"></i> AWS Certified Developer – Associate</li>
+                <li><i class="fas fa-award" style="color:#e2b007"></i> Apache Cassandra 3.x Developer Associate</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <!-- ... (head, styles, and opening tags as in previous examples) ... -->
+
+            <div class="section">
+                <h2>Professional Experience</h2>
+
+                <!-- VISA INC (Latest, not highlighted) -->
+                <div class="exp-block">
+                    <span class="exp-role-line">
+                        Staff Software Engineer @ Visa Inc., Bangalore
+                        <span class="exp-dates">Feb 2025 – Present</span>
+                    </span>
+                    <span class="exp-project-name">
+                        Settlement Engine – Acceptance Solutions
+                    </span>
+                    <ul>
+                        <li>Architected and developed microservices for global money movement and settlement between
+                            banks, handling billions of transactions per day.</li>
+                        <li>Led regression suite development, performance testing, and code quality initiatives (SONAR,
+                            Checkmarx).</li>
+                        <li>Mentored junior engineers and enforced best coding practices.</li>
+                    </ul>
+                    <div class="tech-stack-title">Tech Stack:</div>
+                    <ul class="tech-icons">
+                        <li><span class="devicon-vertx-original colored"></span> Vert.x</li>
+                        <li><span class="devicon-spring-plain colored"></span> Spring Boot</li>
+                        <li><span class="devicon-java-plain colored"></span> Java 11</li>
+                        <li><span class="devicon-gradle-plain colored"></span> Gradle</li>
+                        <li><span class="devicon-postgresql-plain colored"></span> Postgres</li>
+                        <li><span class="devicon-apachekafka-original colored"></span> Kafka</li>
+                        <li>
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/splunk.svg"
+                                class="splunk-icon" alt="Splunk" style="width:20px;vertical-align:middle;">
+                            Splunk
+                        </li>
+                        <li><span class="devicon-googlecloud-plain colored"></span> GCP</li>
+                        <li><span class="devicon-sonarqube-original colored"></span> SONAR</li>
+                        <li><i class="fas fa-shield-alt"></i> Checkmarx</li>
+                    </ul>
+                </div>
+                <div class="exp-separator"></div>
+
+                <!-- LOWE'S INDIA (HIGHLIGHTED WITH STAR) -->
+                <div class="exp-block highlight">
+                    <span class="exp-role-line">
+                        Senior Software Engineer @ Lowe’s India, Bangalore
+                        <span class="exp-dates">Aug 2021 – Jan 2025</span>
+                    </span>
+                    <span class="exp-project-name">
+                        1. Tax Calculation Suite for Retail & Online Orders
+                    </span>
+                    <ul>
+                        <li>Developed a highly scalable microservices system for tax calculation, handling millions of
+                            orders per day across all channels.</li>
+                        <li>Implemented regression testing in Python and automated API performance testing (Gatling) to
+                            ensure reliability and scalability.</li>
+                        <li>Mentored junior engineers and enforced code quality with SONAR.</li>
+                    </ul>
+                    <div>
+                        <div class="tech-stack-title">Tech Stack:</div>
+                        <ul class="tech-icons">
+                            <li><span class="devicon-spring-plain colored"></span> Spring WebFlux/Boot</li>
+                            <li><span class="devicon-java-plain colored"></span> Java 11</li>
+                            <li><span class="devicon-gradle-plain colored"></span> Gradle</li>
+                            <li><span class="devicon-postgresql-plain colored"></span> PostgreSQL</li>
+                            <li><span class="devicon-apachekafka-original colored"></span> Kafka</li>
+                            <li><span class="devicon-python-plain colored"></span> Python</li>
+                            <li><i class="fas fa-eye"></i> Kibana</li>
+                            <li>
+                                <img src="https://pplx-res.cloudinary.com/image/private/user_uploads/70475092/0a03bcb1-3f94-4b7d-8f9f-667cbdc766d8/image.jpg"
+                                    class="grafana-icon" alt="Grafana" style="width:20px;vertical-align:middle;">
+                                Grafana
+                            </li>
+                            <li><span class="devicon-docker-plain colored"></span> Rancher/Spinnaker</li>
+                            <li><span class="devicon-sonarqube-original colored"></span> SONAR</li>
+                        </ul>
+                        <div class="exp-separator"></div>
+                    </div>
+                    <h4 style="margin:10px 0 5px 0; color:green;">Accomplishments – Tax Calculation Suite</h4>
+                    <ul>
+                        <li>Improved tax API throughput by 30% through performance tuning and automated load testing.
+                        </li>
+                        <li>Reduced regression issues by 40% via robust Python-based test suites and BDD Gherkin
+                            scenarios.</li>
+                    </ul>
+                    <div class="exp-separator"></div>
+                    <span class="exp-project-name">2. Private Label Payment Service</span>
+                    <ul>
+                        <li>Built a payment gateway microservice for cheques, Lowe’s branded cards, and third-party gift
+                            cards, supporting omni-channel payments.</li>
+                        <li>Implemented BDD Gherkin specs and automated performance testing (JMeter) for payment APIs.
+                        </li>
+                    </ul>
+                    <div class="tech-stack-title">Tech Stack:</div>
+                    <ul class="tech-icons">
+                        <li><span class="devicon-spring-plain colored"></span> Spring WebFlux/Boot</li>
+                        <li><span class="devicon-java-plain colored"></span> Java 11</li>
+                        <li><span class="devicon-gradle-plain colored"></span> Gradle</li>
+                        <li><span class="devicon-apachekafka-original colored"></span> Kafka</li>
+                        <li>
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/splunk.svg"
+                                class="splunk-icon" alt="Splunk" style="width:20px;vertical-align:middle;">
+                            Splunk
+                        </li>
+                        <li><span class="devicon-sonarqube-original colored"></span> SONAR</li>
+                    </ul>
+                    <h4 style="margin:10px 0 5px 0; color:green;">Accomplishments – Private Label Payment Service</h4>
+                    <ul>
+                        <li>Enabled seamless integration of new payment methods, reducing onboarding time for new
+                            tenders by 50%.</li>
+                        <li>Enhanced payment API reliability and scalability, supporting peak loads during major sales
+                            events.</li>
+                    </ul>
+                </div>
+
+                <!-- SAP LABS -->
+                <div>
+                    <span class="exp-role-line">
+                        Senior Developer @ SAP Labs India, Bangalore
+                        <span class="exp-dates">Oct 2020 – Jul 2021</span>
+                    </span>
+                    <span class="exp-project-name">
+                        Time Processing Service & Fieldglass App
+                    </span>
+                    <ul>
+                        <li>Developed modules for time tracking, vendor management, and global search for SAP
+                            Fieldglass, used by 300+ global clients.</li>
+                        <li>Improved system performance, built analytics components, and maintained code quality
+                            (SONAR).</li>
+                    </ul>
+                    <div class="tech-stack-title">Tech Stack:</div>
+                    <ul class="tech-icons">
+                        <li><span class="devicon-spring-plain colored"></span> Spring Boot</li>
+                        <li><span class="devicon-java-plain colored"></span> Java 8</li>
+                        <li><span class="devicon-maven-plain colored"></span> Maven</li>
+                        <li><span class="devicon-cassandra-plain colored"></span> Cassandra</li>
+                        <li><span class="devicon-microsoftsqlserver-plain colored"></span> MS SQL Server</li>
+                        <li><span class="devicon-apachesolr-original colored"></span> Solr</li>
+                        <li><span class="devicon-sonarqube-original colored"></span> SONAR</li>
+                    </ul>
+                </div>
+                <div class="exp-separator"></div>
+                <div class="exp-separator"></div>
+                <div class="exp-separator"></div>
+
+                <!-- NAGRA (HIGHLIGHTED WITH STAR) -->
+                <div>
+                    <span class="exp-role-line">
+                        Software Engineer @ NAGRA Kudelski Group, Bangalore
+                        <span class="exp-dates">Mar 2018 – Feb 2020</span>
+                    </span>
+                    <span class="exp-project-name">
+                        Content and Product Manager (Broadcast & OTT)
+                    </span>
+                    <ul>
+                        <li>Developed backend APIs for Pay-TV and OTT operator content management, enabling efficient
+                            EPG setup and metadata scheduling.</li>
+                        <li>Built cross-cutting components and reusable APIs for modularity and maintainability across
+                            teams.</li>
+                        <li>Led successful Neo4j and ElasticSearch upgrades for high-availability systems, resolving
+                            critical issues.</li>
+                        <li>Practiced Agile, delivered sprint demos, and championed code quality with SONAR.</li>
+                        <li><b>BRAVO Award</b> for independently owning and executing major database
+                            and analytics engine upgrades.</li>
+                    </ul>
+                    <div class="tech-stack-title">Tech Stack:</div>
+                    <ul class="tech-icons">
+                        <li><span class="devicon-java-plain colored"></span> Java</li>
+                        <li><span class="devicon-spring-plain colored"></span> Spring Boot</li>
+                        <li><span class="devicon-neo4j-plain colored"></span> Neo4j</li>
+                        <li><span class="devicon-rabbitmq-original colored"></span> RabbitMQ</li>
+                        <li><span class="devicon-elasticsearch-plain colored"></span> ElasticSearch</li>
+                        <li><span class="devicon-mockito-plain colored"></span> JMockit/Wiremock</li>
+                        <li><span class="devicon-sonarqube-original colored"></span> SONAR</li>
+                    </ul>
+                    <div class="exp-separator"></div>
+                </div>
+
+                <!-- WIPRO / APPLE (HIGHLIGHTED WITH STAR) -->
+                <div>
+                    <span class="exp-role-line">
+                        Developer L2 / L1 @ Wipro Technologies (Apple Inc.), Chennai
+                        <span class="exp-dates">Nov 2014 – Feb 2018</span>
+                    </span>
+                    <ul>
+                        <li>Developed Metadata Manager and MetadataCentral, empowering Apple teams to manage product
+                            metadata for global NPI launches with multi-version scheduling.</li>
+                        <li>Built OpsManager for managing operational attributes across all Apple products and regions,
+                            improving configuration and efficiency.</li>
+                        <li>Engineered cross-cutting components and APIs using SOLID and DDD principles for clean,
+                            maintainable code.</li>
+                        <li>Integrated new technologies (e.g., Apache Spark) to enhance customer experience and system
+                            performance.</li>
+                        <li>Practiced Agile, delivered sprint demos, and maintained high code quality with SONAR and
+                            PMD.</li>
+                    </ul>
+                    <div class="tech-stack-title">Tech Stack:</div>
+                    <ul class="tech-icons">
+                        <li><span class="devicon-java-plain colored"></span> Java</li>
+                        <li><span class="devicon-spring-plain colored"></span> Spring Core/Web/MVC</li>
+                        <li><span class="devicon-apachespark-original colored"></span> Apache Spark</li>
+                        <li><span class="devicon-cassandra-plain colored"></span> Cassandra</li>
+                        <li><span class="devicon-mockito-plain colored"></span> Mockito/PowerMockito</li>
+                        <li><span class="devicon-sonarqube-original colored"></span> SONAR</li>
+                        <li><span class="devicon-pmd-plain"></span> PMD</li>
+                    </ul>
+                    <div class="exp-separator"></div>
+                </div>
+
+            </div>
+
+            <div class="section page-break">
+                <h2>Passion Projects & Open Source</h2>
+                <h3 style="margin-top:36px; color:#11336c;">System Design</h3>
+                <ul style="list-style:none; padding-left:0; margin-bottom: 24px;">
+                    <li style="margin-bottom:12px; display:flex; align-items:center;">
+                        <span style="font-size:1.3em; margin-right:10px; color:#e67e22;">
+                            <i class="fas fa-hamburger"></i>
+                        </span>
+                        <span>
+                            <a href="https://github.com/aishwarya-swaminathan/learn-low-level-design/tree/master/design-vending-machine"
+                                target="_blank">
+                                <strong>Food Vending Machine:</strong></a>Low level Design of a Food vending machine.
+                        </span>
+                    </li>
+                    <li style="margin-bottom:12px; display:flex; align-items:center;">
+                        <span style="font-size:1.3em; margin-right:10px; color:#2980b9;">
+                            <i class="fas fa-parking"></i>
+                        </span>
+                        <span>
+                            <a href="https://github.com/aishwarya-swaminathan/learn-low-level-design/tree/master/design-parking-lot"
+                                target="_blank"><strong>Parking Lot Design:</strong></a> Low level design of a Parking
+                            Lot.
+                        </span>
+                    </li>
+                    <li style="margin-bottom:12px; display:flex; align-items:center;">
+                        <span style="font-size:1.3em; margin-right:10px; color:#6c3483;">
+                            <i class="fas fa-film"></i>
+                        </span>
+                        <span>
+                            <a href="https://github.com/aishwarya-swaminathan/learn-low-level-design/tree/master/design-movie-booking-system"
+                                target="_blank"><strong>Movie Booking System:</strong></a> Low level design of a Movie
+                            Booking System.
+                        </span>
+                    </li>
+                </ul>
+
+                <h3 style="margin-top:36px; color:#11336c;">Other projects</h3>
+                <ul style="list-style:none; padding-left:0; margin-bottom: 24px;">
+                    <li>
+                        <strong><span class="devicon-spring-plain colored"></span><a
+                                href="https://github.com/aishwarya-swaminathan/PassportProcessingSystem"
+                                target="_blank">
+                                PassportProcessingSystem</a>:</strong>
+                        To simulate a passport application processing system and compute the total time taken for
+                        processing all applications.
+                    </li>
+                    <li>
+                        <strong><span class="devicon-neo4j-plain colored"></span><a
+                                href="https://github.com/aishwarya-swaminathan/async-client-processor" target="_blank">
+                                async-client-processor</a>:</strong>
+                        A sample Application that executes API calls using Java 8 Parallel Stream vs CompletableFuture
+                        and records the observations
+                    </li>
+                    <li>
+                        <strong><span class="devicon-spring-plain colored"></span><a
+                                href="https://gitlab.com/Aish1910/designpatterns"
+                                target="_blank">design-patterns-in-action</a>:</strong>
+                        A project to play around and understand Design Patterns with working examples in Java.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Key Accomplishments</h2>
+                <ul>
+                    <li><i class="fas fa-award" style="color:#0077b5"></i><b> SPOT Award, Lowe's</b>: For designing,
+                        developing a high throughput and resilient payment and tax app from scratch that improved sales
+                        by 50% and consumer engagement by 40%</li>
+                    <li><i class="fas fa-award" style="color:#0077b5"></i><b> BRAVO Award, NAGRA</b>: For independently
+                        handling Neo4j and
+                        ElasticSearch upgrades.</li>
+                    <li><i class="fas fa-award" style="color:#0077b5"></i><b> Budding Star Award, Wipro
+                            Technologies</b>: For quickly ramping up and supporting high-impact deliverables for
+                        Metadata manager application under Apple Online Store suite of Apps.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Education</h2>
+                <div class="edu">
+                    <ul>
+                        <li><i class="fas fa-graduation-cap"></i> Bachelor of Engineering (B.E.), Computer Science</li>
+                        <li><i class="fas fa-graduation-cap"></i> Sri Sairam Engineering College, 2010 – 2014</li>
+                    </ul><br>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Languages</h2>
+                <ul class="lang-list">
+                    <li><i class="fas fa-language"></i> English (Professional)</li>
+                    <li><i class="fas fa-language"></i> Tamil (Professional)</li>
+                    <li><i class="fas fa-language"></i> Hindi (Limited working proficiency)</li>
+                </ul>
+            </div>
+        </div>
+</body>
+
+</html>
