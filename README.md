@@ -10,6 +10,8 @@ Production URL: https://aishwarya-swaminathan.github.io/my-profile/
 
 ## Preview and validate
 
+The footer reads the public GoatCounter `TOTAL` count, including in local previews without recording a visit. It stays hidden if the service is unavailable or blocked. Enable “Allow adding visitor counts on your website” in GoatCounter settings. Public counts can be cached for up to four hours and represent recorded visits, not an exact count of distinct people.
+
 From the parent folder, run `python -m http.server 8000`, then open `http://localhost:8000/my-profile/`. This previews the real project-site prefix. Run `python scripts/check_site.py` from the repository to check local assets, anchor targets and phone privacy.
 
 ## GitHub Pages
