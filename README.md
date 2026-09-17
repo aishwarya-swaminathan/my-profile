@@ -1,6 +1,10 @@
 # Aishwarya Swaminathan — portfolio
 
-Responsive static HTML, CSS and vanilla JavaScript. No framework, build dependency, external fonts, analytics or third-party scripts.
+Responsive static HTML, CSS and vanilla JavaScript. No framework, build dependency or external fonts. GoatCounter provides visitor analytics on the production site only.
+
+## Visitor analytics
+
+`js/analytics.js` loads GoatCounter only on `aishwarya-swaminathan.github.io/my-profile/`. Local previews do not load its script or send visits. The dashboard is https://aishwarya-swaminathan-github-io.goatcounter.com/; dashboard visibility is controlled in your GoatCounter account settings. Tracking begins after deployment, and browsers blocking analytics may not be counted. No API key or password is included in the site.
 
 Production URL: https://aishwarya-swaminathan.github.io/my-profile/
 
