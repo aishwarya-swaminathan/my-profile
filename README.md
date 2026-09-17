@@ -1,10 +1,16 @@
 # Aishwarya Swaminathan — portfolio
 
-Responsive static HTML, CSS and vanilla JavaScript. No framework, build dependency, external fonts, analytics or third-party scripts.
+Responsive static HTML, CSS and vanilla JavaScript. No framework, build dependency or external fonts. GoatCounter provides visitor analytics on the production site only.
+
+## Visitor analytics
+
+`js/analytics.js` loads GoatCounter only on `aishwarya-swaminathan.github.io/my-profile/`. Local previews do not load its script or send visits. The dashboard is https://aishwarya-swaminathan-github-io.goatcounter.com/; dashboard visibility is controlled in your GoatCounter account settings. Tracking begins after deployment, and browsers blocking analytics may not be counted. No API key or password is included in the site.
 
 Production URL: https://aishwarya-swaminathan.github.io/my-profile/
 
 ## Preview and validate
+
+The footer reads the public GoatCounter `TOTAL` count, including in local previews without recording a visit. It stays hidden if the service is unavailable or blocked. Enable “Allow adding visitor counts on your website” in GoatCounter settings. Public counts can be cached for up to four hours and represent recorded visits, not an exact count of distinct people.
 
 From the parent folder, run `python -m http.server 8000`, then open `http://localhost:8000/my-profile/`. This previews the real project-site prefix. Run `python scripts/check_site.py` from the repository to check local assets, anchor targets and phone privacy.
 
